@@ -1,0 +1,28 @@
+
+# Contract 1: Positive Addition
+request:
+  method: GET
+  url: /ms1/add
+  queryParameters:
+    a: "5"
+    b: "10"
+response:
+  status: 200
+  body: "MS1.1 Addition:-15"
+  headers:
+    Content-Type: "text/plain;charset=UTF-8"
+
+---
+
+# Contract 2: Negative Addition
+request:
+  method: GET
+  url: /ms1/add
+  queryParameters:
+    a: "-5"
+    b: "-2"
+response:
+  status: 200
+  body: "MS1.1 Addition:--7"
+  headers:
+    Content-Type: "text/plain;charset=UTF-8"
